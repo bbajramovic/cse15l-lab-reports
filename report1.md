@@ -4,6 +4,8 @@
 
 The working directory here was /home. There is no error in this output, there are simply no arguments for the system to "change directory" to.
 
+
+
 ![Image](image2.png)
 
 The working directory here is /home/lecture1. There is no error in this output. Here we changed the directory from /home to /home/lecture1.
