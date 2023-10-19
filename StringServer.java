@@ -4,7 +4,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 
-class StringHandler implements URLHandler {
+class StringHandler {
   int length = args.length;
   int num = 0;
   List<String> args;
@@ -15,11 +15,11 @@ class StringHandler implements URLHandler {
       num += 1;
       if (url.getPath().equals("/add-message")){
         if(query.startsWith("s=")) {
-          String[] parameters = url.getQuery().split("=")[n];
+          String[] parameters = url.getQuery().split("=");
           String path = String.join("\n", args) + "\n";
           Files.write(Paths.get(this.path), path.getBytes());
-          for(int i = 1; i < length; length += 1) {
-          System.out.println(args[i]);
+         // for(int i = 1; i < length; length += 1) {
+          System.out.println(args);
           }
         }
       }
