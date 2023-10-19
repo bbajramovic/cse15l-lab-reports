@@ -18,12 +18,12 @@ class StringHandler {
           String[] parameters = url.getQuery().split("=");
           String path = String.join("\n", args) + "\n";
           Files.write(Paths.get(this.path), path.getBytes());
-         // for(int i = 1; i < length; length += 1) {
+          //for(int i = 1; i < length; length += 1) {
           System.out.println(args);
           }
         }
       else 
-      return "use /add-message with a query parameter s\n";
+        return "use /add-message with a query parameter s\n";
       }
     }
   }
