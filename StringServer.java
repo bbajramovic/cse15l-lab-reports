@@ -19,12 +19,13 @@ class StringHandler {
           String path = String.join("\n", args) + "\n";
           Files.write(Paths.get(this.path), path.getBytes());
           //for(int i = 1; i < length; length += 1) {
-          System.out.println(args);
+          System.out.print(args);
           }
         }
-      else 
+      else {
         return "use /add-message with a query parameter s\n";
       }
+      
     }
   }
 
