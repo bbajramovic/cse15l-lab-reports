@@ -22,8 +22,10 @@ class StringHandler {
           System.out.println(args);
           }
         }
+      else 
+      return "use /add-message with a query parameter s\n";
       }
     }
   }
-}
+
   
