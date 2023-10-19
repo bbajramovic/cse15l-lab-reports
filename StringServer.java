@@ -24,5 +24,6 @@ class StringHandler implements URLHandler {
         }
       }
     }
-      
+  }
+}
   
