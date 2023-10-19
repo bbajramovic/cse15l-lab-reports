@@ -5,9 +5,9 @@ import java.nio.file.Paths;
 import java.util.List;
 
 class StringHandler {
+List<String> args;
   int length = args.length;
   int num = 0;
-  List<String> args;
   String path;
   public String handleRequest(URI url) {
     if (url.getPath().equals("/")){
@@ -19,14 +19,9 @@ class StringHandler {
           String path = String.join("\n", args) + "\n";
           Files.write(Paths.get(this.path), path.getBytes());
           //for(int i = 1; i < length; length += 1) {
-          System.out.print(args);
+          System.out.println(args);
           }
         }
-      else {
-        return "use /add-message with a query parameter s\n";
       }
-      
     }
   }
-
-  
