@@ -11,13 +11,13 @@ class Handler implements URLHandler {
     public String handleRequest(URI url) {
             if (url.getPath().contains("/add-message")) {
                 String[] parameters = url.getQuery().split("=");
-              String str = String.format(count) + "."+ parameters[1] \n"
-                count++ 
+              String str = String.format(count) + "."+ parameters[1] "\n"
+                count++;
                 array.add(str); //add this to array
                 return String.format("%s ", array); 
                 }
             }
-            return "404 Not Found!";
+            return "404 Not Found!"; //illegal start of type error
         }
     }
 }
