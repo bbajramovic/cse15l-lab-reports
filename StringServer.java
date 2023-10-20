@@ -5,7 +5,7 @@ class Handler implements URLHandler {
     // The one bit of state on the server: a number that will be manipulated by
     // various requests.
     int num = 0;
- String[] array = null;
+ String[] array = new String[100];
   int count = 1;
 
     public String handleRequest(URI url) {
