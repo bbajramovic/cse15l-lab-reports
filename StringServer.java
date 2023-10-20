@@ -6,7 +6,9 @@ class Handler implements URLHandler {
     // various requests.
     int num = 0;
  String[] array = new String[100];
+String abc = "";
   int count = 1;
+
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
@@ -14,9 +16,12 @@ class Handler implements URLHandler {
                 String[] parameters = url.getQuery().split("=");
                 String str = String.format("%d", count) + "."+ parameters[1] + "\n";
                 count++;
-                array.add(str); //add this to array
-                return String.format("%s ", array); 
+                array.append(str); 
+
+                for( int i = 0; i < 99; i++ ){
+                    abc= abc + array[i]; 
                 }
+                return abc;
             }
             return "404 Not Found!"; //illegal start of type error
         }
