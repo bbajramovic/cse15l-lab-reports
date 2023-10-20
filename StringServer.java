@@ -12,7 +12,7 @@ class Handler implements URLHandler {
         if (url.getPath().equals("/")) {
             if (url.getPath().contains("/add-message")) {
                 String[] parameters = url.getQuery().split("=");
-                String str = String.format(count) + "."+ parameters[1] + "\n";
+                String str = String.format("%d", count) + "."+ parameters[1] + "\n";
                 count++;
                 array.add(str); //add this to array
                 return String.format("%s ", array); 
