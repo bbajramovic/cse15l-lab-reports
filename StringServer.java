@@ -16,7 +16,7 @@ String abc = "";
                 String[] parameters = url.getQuery().split("=");
                 String str = String.format("%d", count) + "."+ parameters[1] + "\n";
                 count++;
-                array.append(str); 
+                array= array + str; 
 
                 for( int i = 0; i < 99; i++ ){
                     abc= abc + array[i]; 
