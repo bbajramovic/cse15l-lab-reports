@@ -5,9 +5,9 @@ class Handler implements URLHandler {
     // The one bit of state on the server: a number that will be manipulated by
     // various requests.
     int num = 0;
- String[] array = new String[100];
-String abc = "";
-  int count = 1;
+    String[] array = new String[100];
+    String abc = "";
+    int count = 1;
 
 
     public String handleRequest(URI url) {
