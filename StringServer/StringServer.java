@@ -12,23 +12,21 @@ class Handler implements URLHandler {
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
-            if (url.getPath().contains("/add-message")) {
-                String[] parameters = url.getQuery().split("=");
-                String str = String.format("%d", count) + "."+ parameters[1] + "\n";
-                count++;
-                array[count]= str; 
+            return "input a path!";
+        }
+        else if (url.getPath().equals("/add-message")) {
+            String[] parameters = url.getQuery().split("=");
+            String str = String.format("%d", count) + "."+ parameters[1] + "\n";
+            count++;
+            array[count]= str; 
 
-                for( int i = 0; i < 99; i++ ){
-                    abc= abc + array[i]; 
-                }
-                return abc;
+            for( int i = 0; i < 99; i++ ){
+                abc= abc + array[i]; 
             }
-            else {
-                return "404 Not Found!";
-            }
+            return abc;
         }
         else {
-                return "404 Not Found!";
+            return "404 Not Found!";
         }
     }
 }
