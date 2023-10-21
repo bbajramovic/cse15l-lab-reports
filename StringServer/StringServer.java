@@ -26,8 +26,6 @@ class Handler implements URLHandler {
             else {
                 return "404 Not Found!";
             }
-        else {
-        return "404 Not Found!";
         }
     }
 }
