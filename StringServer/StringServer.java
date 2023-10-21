@@ -23,9 +23,11 @@ class Handler implements URLHandler {
                 }
                 return abc;
             }
-        }
+            else {
+                return "404 Not Found!";
+            }
         else {
-        return "404 Not Found!"; //illegal start of type error
+        return "404 Not Found!";
         }
     }
 }
