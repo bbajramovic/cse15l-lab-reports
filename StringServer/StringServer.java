@@ -20,7 +20,7 @@ class Handler implements URLHandler {
             count++;
             array[count]= str; 
 
-            for( int i = 0; i < (count + 1 ); i++ ){
+            for( int i = 0; i <= (count); i++ ){
                 abc= abc + array[i]; 
             }
             return abc;
