@@ -4,13 +4,12 @@ import java.net.URI;
 class Handler implements URLHandler {
     // The one bit of state on the server: a number that will be manipulated by
     // various requests.
-    int num = 0;
-    String[] array = new String[100];
-    String abc = "";
-    int count = 0;
-
 
     public String handleRequest(URI url) {
+        int num = 0;
+        String[] array = new String[100];
+        String abc = "";
+         int count = 0;
         if (url.getPath().equals("/")) {
             return "input a path!";
         }
@@ -20,9 +19,9 @@ class Handler implements URLHandler {
             array[count]= str;
              
 
-            for( int i = 0; i <= (count); i++ ){
-                abc= abc + array[i]; 
-            }
+            //for( int i = 0; i <= (count); i++ ){
+            abc= abc + array[count]; 
+           // }
             count++;
             return abc;
         }
