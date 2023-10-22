@@ -6,11 +6,10 @@ class Handler implements URLHandler {
     // various requests.
 
     public String handleRequest(URI url) {
-        int num = 0;
         String[] array = new String[100];
         int count = 0;
         String abc = "";
-        abc.setText("");
+        String str = "";
         if (url.getPath().equals("/")) {
             return "input a path!";
         }
@@ -19,8 +18,7 @@ class Handler implements URLHandler {
             String str = String.format("%d", count) + "."+ parameters[1] + "\n";
             array[count]= str;
              
-
-            for( int i = 0; i <= (count); i++ ){
+             for( int i = 0; i <= count; i++ ){
             abc = abc + array[count]; 
             }
             count++;
