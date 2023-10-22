@@ -17,7 +17,7 @@ class Handler implements URLHandler {
             array[count] = String.format("%d", count) + "."+ parameters[1] + "\n";
              
              //for( int i = 0; i <= count; i++ ){
-            abc = abc + array[i]; 
+            abc = abc + array[count]; 
             //}
             count++;
             return abc;
