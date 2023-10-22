@@ -19,9 +19,9 @@ class Handler implements URLHandler {
             array[count]= str;
              
 
-            for( int i = 0; i <= (count); i++ ){
-            abc= array[count]; 
-            }
+            //for( int i = 0; i <= (count); i++ ){
+            abc = abc + array[count]; 
+            //}
             count++;
             return abc;
         }
