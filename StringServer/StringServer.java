@@ -7,7 +7,7 @@ class Handler implements URLHandler {
     int num = 0;
     String[] array = new String[100];
     String abc = "";
-    int count = 1;
+    int count = 0;
 
 
     public String handleRequest(URI url) {
@@ -20,7 +20,7 @@ class Handler implements URLHandler {
             count++;
             array[count]= str; 
 
-            for( int i = 0; i < count; i++ ){
+            for( int i = 0; i < (count + 1 ); i++ ){
                 abc= abc + array[i]; 
             }
             return abc;
