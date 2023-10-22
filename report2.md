@@ -44,7 +44,7 @@ class StringServer {
     }
 }
 ```
-
+![Image]
 Which methods in your code are called?
 
 *String.format* is a method that returns a formatted string using the given locale and specified format string and arguments. *.getPath()" is another method that that returns the path of the given file object. 
