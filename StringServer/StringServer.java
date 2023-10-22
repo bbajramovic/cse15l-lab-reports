@@ -9,14 +9,12 @@ class Handler implements URLHandler {
         String[] array = new String[100];
         int count = 0;
         String abc = "";
-        String str = "";
         if (url.getPath().equals("/")) {
             return "input a path!";
         }
         else if (url.getPath().equals("/add-message")) {
             String[] parameters = url.getQuery().split("=");
-            String str = String.format("%d", count) + "."+ parameters[1] + "\n";
-            array[count]= str;
+            array[count] = String.format("%d", count) + "."+ parameters[1] + "\n";
              
              for( int i = 0; i <= count; i++ ){
             abc = abc + array[count]; 
