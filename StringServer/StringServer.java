@@ -17,12 +17,13 @@ class Handler implements URLHandler {
         else if (url.getPath().equals("/add-message")) {
             String[] parameters = url.getQuery().split("=");
             String str = String.format("%d", count) + "."+ parameters[1] + "\n";
-            count++;
-            array[count]= str; 
+            array[count]= str;
+             
 
             for( int i = 0; i <= (count); i++ ){
                 abc= abc + array[i]; 
             }
+            count++;
             return abc;
         }
         else {
