@@ -82,4 +82,5 @@ A terminal interaction where you log into ieng6 with your course-specific accoun
 ![Image](ss5.png)
 
 #Part 3
+
 Week 3 I can definitely say that I learned a lot, and spent a lot of time learning it. I do not have experience with java, and learning how to write the code for this week's lab Part 1 was definitely a struggle, but I did learn a lot. I also learned about what SSH is and how to access it and to create an authorized key for myself via vscode so that I wouldn't have to enter in my password when I log in there.
