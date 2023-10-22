@@ -4,11 +4,11 @@ import java.net.URI;
 class Handler implements URLHandler {
     // The one bit of state on the server: a number that will be manipulated by
     // various requests.
-
-    public String handleRequest(URI url) {
         String[] array = new String[100];
         int count = 0;
         String abc = "";
+    public String handleRequest(URI url) {
+        
         if (url.getPath().equals("/")) {
             return "input a path!";
         }
