@@ -123,10 +123,10 @@ In the reverseInPlace method, I changed the domain of the for loop to half of th
 is not what we want. So instead, I changed that domain of the loop to half of the length of the array and I also had to create a temporary variable which would store the variable from the original array that is being lost during the reversing process. Our temporary variable would be set to equal the first index of the original array.
 We would set that value equal to the last index of the changed array. Then the temp variable is reset to contain the second variable of the original array, and then we set that value equal to the second to last index of our reversed array. This process is repeated until the loop ends.
 
-## Part 2- Researching
+# Part 2- Researching
 I chose the command `less` to research. `Less` allows us to read text files one screen at a time and also provides us with navigation through what is displayed on the screen. Pressing q allows us to exit the `less ` and get back into the normal terminal.
 
-# Command1: less -S
+## Command1: less -S
 `less -S` allows us to access the specified contents of the file, but we will see that the long lines of the file are chopped if they do not fit within the width of the terminal, instead of being wrapped to the next line like we normally see. 
 This would be useful for files with long lines which would allow you to see the full content of each line without the line wrapping. 
 
@@ -183,7 +183,7 @@ Output:
         because few studies have examined the relation of BMI to
 ```
 
-# Command2: less -F
+## Command2: less -F
 The command `less -F` allows us to exit out of the less method if the file is small enough to fit onto one screen. This is handy because we wouldnt have to exit out of the less program if our file has very little contents in it and there is no reason to enter less if we can 
 just see everything in the terminal easily. Example 3 did not exit back to terminal because the file contents did not fit on one screen, however, Example 4's file had only 46 lines, and once I ran the command, it displayed the file 
 contents in the terminal and I was already back in the terminal without having to press q. 
@@ -267,7 +267,7 @@ Output:
         closed.
 ```
 
-# Command3: less +N
+## Command3: less +N
 `less +N` where N is a number value, allows us to open the `less` program and to be able to start reading from the specified N line. Example 6's file had 599 lines, but `less +N` allowed me to 
 start reading from line 585 where I could just read about the last passage in the file about Waste Disposal.
 
@@ -332,7 +332,7 @@ officials should be notified of any potentially hazardous
 conditions.
 ```
 
-# Command4: less -N
+## Command4: less -N
 `less -N` allows us to access the file, except now each line is numbered. This would allow for better navigation and referring to lines of a file when accessing it in terminal.
 
 Example 7:
