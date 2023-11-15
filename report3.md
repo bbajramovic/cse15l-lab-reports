@@ -9,7 +9,7 @@ public class ArrayTests {
 	public void testReverseInPlace() {
     int[] input1 = { 1,0,2,3 };
     ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{ 3,2,1,0 }, input1); //input here for the expected is wrong
+    assertArrayEquals(new int[]{ 3,2,1,0 }, input1);
 	}
 
 
