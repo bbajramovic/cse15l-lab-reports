@@ -7,10 +7,17 @@ import org.junit.*;
 public class ArrayTests {
 	@Test 
 	public void testReverseInPlace() {
-    int[] input1 = {3,0 };
+    int[] input1 = { 1,0,2,3 };
     ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{0,3}, input1);
+    assertArrayEquals(new int[]{ 3,2,1,0 }, input1); //input here for the expected is wrong
 	}
+
+
+  @Test
+  public void testReversed() {
+    int[] input1 = { };
+    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+  }
 }
 ```
 ## The Corresponding Code to the Failure Inducing Input
@@ -119,7 +126,7 @@ In the reversed method, we have an output failure by recieving all 0's in our re
 array. Our new array was never assigned any values so the returned array is just all 0's. To fix this, I assigned the elements of the new array to be the elements of the original array in reverse order
 and return this new array, not the array that was orginially inputed.
 
-In the reverseInPlace method, I changed the domain of the for loop to half of the length of the original array, because in the original code, arr[] is looping through itself and assigning these new reversed values to itself so if the array was [1,2,3,4], it would return a reversed array of [4,3,3,4]. Which
+In the reverseInPlace method, I changed the domain of the for loop to half of the length of the original array, because in the original code, `arr[i]` is looping through itself and assigning these new reversed values to itself so if the array was [1,2,3,4], it would return a reversed array of [4,3,3,4]. Which
 is not what we want. So instead, I changed that domain of the loop to half of the length of the array and I also had to create a temporary variable which would store the variable from the original array that is being lost during the reversing process. Our temporary variable would be set to equal the first index of the original array.
 We would set that value equal to the last index of the changed array. Then the temp variable is reset to contain the second variable of the original array, and then we set that value equal to the second to last index of our reversed array. This process is repeated until the loop ends.
 
