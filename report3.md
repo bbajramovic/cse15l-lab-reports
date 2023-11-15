@@ -119,6 +119,7 @@ public class ArrayExamples {
 ```
 ## Screenshots of Running JUnit
 ![Image](lab3ss.png)
+![Image](lab3ss1.5.png)
 ![Image](lab3ss2.png)
 
 ## The Fix
