@@ -124,13 +124,13 @@ continued screenshot
 ![Image](lab3ss2.png)
 
 ## The Fix
-In the reversed method, we have an output failure by recieving all 0's in our returned array instead of the expected reversed array. The issue is that the elements are not being copied from the original array to the new array, they are instead being copied from the new array to the old
+In the `reversed` method, we have an output failure by recieving all 0's in our returned array instead of the expected reversed array. The issue is that the elements are not being copied from the original array to the new array, they are instead being copied from the new array to the old
 array. Our new array was never assigned any values so the returned array is just all 0's. To fix this, I assigned the elements of the new array to be the elements of the original array in reverse order
 and return this new array, not the array that was orginially inputed.
 
-In the reverseInPlace method, I changed the domain of the for loop to half of the length of the original array, because in the original code, `arr[i]` is looping through itself and assigning these new reversed values to itself so if the array was [1,2,3,4], it would return a reversed array of [4,3,3,4]. Which
+In the `reverseInPlace` method, I changed the domain of the for loop to half of the length of the original array, because in the original code, `arr[i]` is looping through itself and assigning these new reversed values to itself so if the array was [1,2,3,4], it would return a reversed array of [4,3,3,4]. Which
 is not what we want. So instead, I changed that domain of the loop to half of the length of the array and I also had to create a temporary variable which would store the variable from the original array that is being lost during the reversing process. Our temporary variable would be set to equal the first index of the original array.
-We would set that value equal to the last index of the changed array. Then the temp variable is reset to contain the second variable of the original array, and then we set that value equal to the second to last index of our reversed array. This process is repeated until the loop ends.
+We would set that value equal to the last index of the changed array. Then the `temp` variable is reset to contain the second variable of the original array, and then we set that value equal to the second to last index of our reversed array. This process is repeated until the loop ends.
 
 # Part 2- Researching
 I chose the command `less` to research. `Less` allows us to read text files one screen at a time and also provides us with navigation through what is displayed on the screen. Pressing q allows us to exit the `less ` and get back into the normal terminal.
