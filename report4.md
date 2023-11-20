@@ -4,7 +4,7 @@
 To log into ieng6, I had to go into bash terminal, and type `ssh cs15lfa23mw@ieng6-201.ucsd.edu` <enter>, which logged me right away into my account without the password. The ssh command allows
 us to log into ssh with our username following the command.
 
-# Part5
+# Part 5
 
 ![Image](part5.png)
 To git clone the ssh link, I went to the github website, forked the repository "Lab7", then from my fork, I clicked on the "code" button, and copied the SSH link <control>+<c>. In terminal,
