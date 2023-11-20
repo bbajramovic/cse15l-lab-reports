@@ -26,7 +26,7 @@ Here I use the command `vim ListExamples.java` to open up the java file in `vim`
 ![Image](part8.png)
 To re-run the tests, I executed `bash test.sh` which ran the bash script as explained above. 
 
-#Part9
+# Part9
 
 ![Image](part9.png)
 I type the command `git add ListExamples.java` to stage the changes that I wanted to include in this commit, which was the file that I edited. Then I did `git commit -m "Changed index1 to index2"` which is a command that commits our staged changes along with a commit message which is done with `-m`. Then I needed to `git push` to upload the repository content.
