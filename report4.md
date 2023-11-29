@@ -13,7 +13,7 @@ is a git command used to create a copy of a remorte Git repository and copy it t
 # Part6
 
 ![Image](part6.png)
-To run the buggy tests, I had to cd into the directory using `cd lab7` <enter> first. Then I ran the command `bash test.sh` and `< enter >` to run the tests. `cd` means "change directory" which changes our current directory into the one that we want to be in to run our commands. `bash` followed by a bash script is a command used to execute a bash script.
+To run the buggy tests, I had to cd into the directory using `cd lab7` then `<enter>` first. Then I ran the command `bash test.sh` and `< enter >` to run the tests. `cd` means "change directory" which changes our current directory into the one that we want to be in to run our commands. `bash` followed by a bash script is a command used to execute a bash script.
 
 # Part7
 
