@@ -23,6 +23,7 @@ Here I use the command `vim ListExamples.java` to open up the java file in `vim`
 # Part8
 
 ![Image](part8.png)
+
 To re-run the tests, I executed `bash test.sh` which ran the bash script as explained above. 
 
 # Part9
