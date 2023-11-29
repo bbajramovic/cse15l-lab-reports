@@ -6,7 +6,7 @@ To log into ieng6, I had to go into bash terminal, and type `ssh cs15lfa23mw@ien
 # Part 5
 
 ![Image](part5.png)
-To git clone the ssh link, I went to the github website, forked the repository "Lab7", then from my fork, I clicked on the "code" button, and copied the SSH link `<control> <+> <c>`. In terminal,
+To git clone the ssh link, I went to the github website, forked the repository "Lab7", then from my fork, I clicked on the "code" button, and copied the SSH link `<control> + <c>`. In terminal,
 I typed the commmand `git clone git@github.com:bbajramovic/lab7.git` and `< enter >` which cloned my forked repository with the SSH link. The `git clone` command, followed by a link to a repository, 
 is a git command used to create a copy of a remorte Git repository and copy it to our local machine. 
 
