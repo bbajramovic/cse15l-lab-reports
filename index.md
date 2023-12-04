@@ -5,3 +5,5 @@
 [LabReport3](https://bbajramovic.github.io/cse15l-lab-reports/report3)
 
 [LabReport4](https://bbajramovic.github.io/cse15l-lab-reports/report4)
+
+[LabReport5](https://bbajramovic.github.io/cse15l-lab-reports/report5)
