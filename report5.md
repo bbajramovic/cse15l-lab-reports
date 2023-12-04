@@ -5,10 +5,11 @@ the junit libraries for the test to run. It is showing a 1/1 when it should be a
 ![Image](lab5ss1.png)
 
 ## TA Response
-"What other elements do you need, along with the compiled junit libraries, to be able to run junit? What is the structure of your current directory? Is there anything missing from your current directory?"
+"What other elements do you need, along with the compiled junit libraries, to be able to run junit? What is the structure of your current directory? What is the structure of the 
+directory that you want to compile your junit tests in? Is there anything missing from that directory?"
 
 ## Student Response
-"At that point in the bash script, I am currently in the `grading-area` directory, and I realized that I do not have a lib folder within the directory that I am trying to perform
+"In `grading-area` directory, and I realized that I do not have a lib folder within the directory that I am trying to perform
 compilations in. The lib folder is where we would have the hamcrest-core file and all junit files, but since I did not have a lib folder, my javac compilation of junit tests could not work.
 ![Image](lab5ss3.png)
 
