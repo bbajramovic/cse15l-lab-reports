@@ -17,7 +17,7 @@ compilations in. The lib folder is where we would have the hamcrest-core file an
 ![Image](lab5ss4.png)
 
 # The file & directory structure AFTER the bug fix:
-![Image](lab5ss5.png)
+![Image](lab5ss6.png)
 
 # The contents of each file before fixing the bug
 Grade.sh : 
