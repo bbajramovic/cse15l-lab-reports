@@ -297,7 +297,7 @@ bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-lab3
 
 The bug, as explained above, was that we were missing the library folder in our `grading-area` directory, which meant that our junit tests could not compile correctly. To fix this,
 I added the line `cp -R lib grading-area` to the bash script right underneath `cp TestListExamples.java grading-area` so that we would have the library folder in our  `grading-area` directory
-before we did our `javac` commands for junit. Discovering this bug is a little tricky by just only looking at the output of the error message. The error message is basically telling us that 
+before we did our `javac` commands for junit. `cp -R lib grading-area` recursively copies all of the contents of the lib folder to the  `grading-area` directory. Discovering this bug is a little tricky by just only looking at the output of the error message. The error message is basically telling us that 
 the program cannot find the junit classes and that org.junit does not exist. A student would potentially be able to discover the bug by looking at what a succesful compliation of org.junit
 looks like in a directory structure, and compare it to their current directory structure, and notice that they do not have a lib folder where the org.junit .jar file is supposed to be.
 
